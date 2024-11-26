@@ -8,6 +8,7 @@ class Account(db.Model):
 
     def __repr__(self):
         return f'<Account {self.id}, Balance: {self.balance}>'
+    
 from passlib.hash import pbkdf2_sha256
 
 class User(db.Model):
